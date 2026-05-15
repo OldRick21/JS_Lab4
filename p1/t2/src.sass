@@ -1,0 +1,16 @@
+body
+  background: #111
+  padding: 40px
+
+.numbers
+  display: flex
+  flex-wrap: wrap
+  gap: 12px
+
+  span
+    font-size: 1.2rem
+    font-weight: bold
+
+  @for $n from 1 through 100
+    .num-#{$n}
+      color: rgb($n, 256 - $n, 0)
